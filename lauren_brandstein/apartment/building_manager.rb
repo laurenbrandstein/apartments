@@ -13,6 +13,7 @@
 # debug your way through populating the contents of the three classes in lib/.
 # There is no need to edit anything in this file.
 
+require 'pry'
 require_relative 'lib/building'
 require_relative 'lib/apartment'
 require_relative 'lib/person'
@@ -81,6 +82,8 @@ apartment_count = gets.to_i
     apartment.rent = gets.strip.to_i
   end
 end
+
+binding.pry
 
 puts "What would you like to do next, (v)iew all apartments? (q)uit?"
 response = gets.strip
